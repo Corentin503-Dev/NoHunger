@@ -10,8 +10,8 @@ class Main extends PluginBase implements Listener
 {
     public function onEnable(): void
     {
-        $this->getLogger()->info("Le plugin c'est bien activé !");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getLogger()->info("Le plugin c'est bien activé !");
     }
     public function onHunger(PlayerExhaustEvent $event)
     {
